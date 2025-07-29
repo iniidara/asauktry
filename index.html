@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asa Uk</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="tailwind.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="background-image: url('images/hero\ image.jpeg');" class="bg-no-repeat bg-center bg-cover w-full h-96 lg:object-cover lg:bg-center sm:w-full sm:bg-cover lg:h-96 xl:bg-cover xl:h-96 2xl:bg-cover 2xl:h-96">
+            <header class="sticky">
+                <nav>
+                    <ul class="flex md:flex gap-4 items-center justify-between">
+                        <li class="sm:mr-auto text-4xl font-bold">ROYAL AFRICA</li>
+                        <li class="hidden md:text-xl md:flex font-semibold">WHO WE ARE</li>
+                        <li class="hidden md:text-xl md:flex font-semibold">WHAT WE DO</li>
+                        <li class="hidden md:text-xl md:flex font-semibold">EVENTS</li>
+                        <li class="hidden md:text-xl md:flex font-semibold">JOIN & SUPPORT</li>
+                        <li class="hidden md:text-xl md:flex font-semibold">NEWS</li>
+                        <li><button class="hidden md:flex md:text-xl bg-orange-500 sm:rounded-full p-2">BECOME A MEMBER</button></li>
+                        <li class="flex md:hidden" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#333"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                    </ul>
+                    <ul id="sidebar" style="background-image: none;">
+                        <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        <li>WHO WE ARE</li>
+                        <li>WHAT WE DO</li>
+                        <li>EVENTS</li>
+                        <li>JOIN & SUPPORT</li>
+                        <li>NEWS</li>
+                        <li><button class="bg-orange-500 p-2 rounded-full">BECOME A MEMBER</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="flex flex-col pb-24 items-center justify-center text-white text-xl pt-24 font-bold gap-4 sm:pt-20 lg:pt-24">
+                <p class="text-3xl text-center lg:text-6xl text-black sm:text-4xl">Support the work of the society</p>
+                <button class="bg-orange-400 rounded-full text-sm p-2">Become A Member</button>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col items-center justify-center gap-4 mt-8 mb-8">
+            <h2 class="text-2xl mb-5">Our Pillars</h2>
+            <div class="grid grid-cols-2 gap-6 sm:grid-cols-4 lg:grid-cols-4">
+                <div style="background-image: url('images/connect.jpeg');" class="w-36 h-36 bg-cover bg-center rounded-lg">
+                    <div class="pt-24 pr-20">
+                       <p class="text-black bg-white">Connect</p>
+                    </div>
+                </div>
+                <div style="background-image: url('images/learn.jpeg');" class="w-36 h-36 bg-cover bg-center rounded-lg">
+                    <div class="pt-24 pr-20">
+                       <p class="text-black bg-white">Learn</p>
+                    </div>
+                </div>
+                <div style="background-image: url('images/debate.jpeg');" class="w-36 h-36 bg-cover bg-center rounded-lg">
+                    <div class="pt-24 pr-20">
+                       <p class="text-black bg-white">Debate</p>
+                    </div>
+                </div>
+                <div style="background-image: url('images/celebrate.jpeg');" class="w-36 h-36 bg-cover bg-center rounded-lg">
+                    <div class="pt-24 pr-16">
+                       <p class="text-black bg-white">Celebrate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-7">
+            <h2 class="text-2xl mb-5">Events</h2>
+            <div>
+                <div style="background-image: url('images/family.jpeg');" class="flex flex-col gap-4 bg-cover bg-center bg-no-repeat w-80 h-auto">
+                    <div class="flex px-5 gap-40 text-red-600">
+                        <p class="text-xs">When<br>
+                        30/05/19
+                        </p>
+                        <p class="text-xs">Volunteering</p>
+                    </div>
+                    <p class="text-3xl pl-5">South Africa<br>
+                        Preelection briefing
+                    </p>
+                    <p class="w-3/4 text-xs pl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in velit nec justo convallis dictum. Vivamus suscipit sapien ut justo dapibus, at feugiat magna laoreet.</p>
+                    <div class="pl-5 pb-8">
+                        <button class="text-white bg-black rounded-md p-4">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
